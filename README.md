@@ -1,2 +1,2 @@
-# openwebrx-installer
-Quick setup openwebrx &amp; csdr &amp; rtl-sdr.
+# OpenWebRX 1-Click Installer
+Quick setup OpenWebRX
