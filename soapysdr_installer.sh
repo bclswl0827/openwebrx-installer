@@ -1,3 +1,4 @@
+#!/bin/bash
 apt update && apt install build-essential git libfftw3-dev cmake libusb-1.0-0-dev
 wget http://www.sdrplay.com/software/SDRplay_RSP_API-Linux-2.13.1.run
 chmod 755 SDRplay_RSP_API-Linux-2.13.1.run
