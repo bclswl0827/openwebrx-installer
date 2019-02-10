@@ -13,7 +13,7 @@ git clone https://github.com/simonyiszk/csdr.git
 cd csdr
 sudo make
 sudo make install
-cd ../..
+cd ..
 git clone https://github.com/pothosware/SoapySDR
 cd SoapySDR
 mkdir build
@@ -31,7 +31,7 @@ sudo cmake ..
 sudo make 
 sudo make install
 sudo ldconfig
-cd ..
+cd ../..
 git clone https://github.com/pothosware/SoapySDRPlay.git
 cd SoapySDRPlay
 mkdir build
@@ -40,5 +40,5 @@ sudo cmake ..
 sudo make
 sudo make install
 cd ../..
-echo -e "\n\n\n\n\n\nOK, Done.\nYour system will reboot in 10s.\nPress Ctrl+C to cancel.\nAfter that, use:'SoapySDRUtil --make' and 'SoapySDRUtil --find' to apply your device."
+echo -e "\n\n\n\n\n\nOK, Done.\nYour system will reboot in 10s.\nPress Ctrl+C to cancel.\nAfter that, use:'sudo SoapySDRUtil --make' and 'sudo SoapySDRUtil --find' to apply your device."
 sleep 10 && reboot
