@@ -5,9 +5,9 @@ sudo chmod 755 SDRplay_RSP_API-Linux-2.13.1.run
 sudo ./SDRplay_RSP_API-Linux-2.13.1.run
 sudo bash -c 'echo -e "\n# for SDRPlay:\nblacklist sdr_msi3101\nblacklist msi001\nblacklist msi2500\n" >> /etc/modprobe.d/blacklist.conf'
 sudo update-initramfs -u
-sudo rmmod blacklist sdr_msi3101
-sudo rmmod blacklist msi001
-sudo rmmod blacklist msi2500
+sudo rmmod sdr_msi3101
+sudo rmmod msi001
+sudo rmmod msi2500
 git clone https://github.com/simonyiszk/openwebrx.git
 git clone https://github.com/simonyiszk/csdr.git
 cd csdr
@@ -41,4 +41,4 @@ sudo make
 sudo make install
 cd ../..
 echo -e "\n\n\n\n\n\nOK, Done.\nYour system will reboot in 10s.\nPress Ctrl+C to cancel.\nAfter that, use:'sudo SoapySDRUtil --make' and 'sudo SoapySDRUtil --find' to apply your device."
-sleep 10 && reboot
+sleep 10 && sudo reboot
