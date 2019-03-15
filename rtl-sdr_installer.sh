@@ -1,6 +1,6 @@
 #!/bin/bash
 apt install build-essential git libfftw3-dev cmake libusb-1.0-0-dev -y
-git clone git://git.osmocom.org/rtl-sdr.git
+git clone https://github.com/osmocom/rtl-sdr.git
 cd rtl-sdr/
 mkdir build
 cd build
