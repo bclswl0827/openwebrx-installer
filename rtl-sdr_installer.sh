@@ -14,7 +14,7 @@ bash -c 'echo -e "\n# for RTL-SDR:\nblacklist dvb_usb_rtl28xxu\n" >> /etc/modpro
 update-initramfs -u
 rmmod dvb_usb_rtl28xxu
 git clone https://github.com/simonyiszk/openwebrx.git
-git clone https://github.com/simonyiszk/csdr.git
+git clone https://github.com/jketterl/csdr
 cd csdr
 make
 make install
