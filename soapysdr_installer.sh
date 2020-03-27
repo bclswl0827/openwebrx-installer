@@ -9,7 +9,7 @@ sudo rmmod sdr_msi3101
 sudo rmmod msi001
 sudo rmmod msi2500
 git clone https://github.com/simonyiszk/openwebrx.git
-git clone https://github.com/simonyiszk/csdr.git
+git clone https://github.com/jketterl/csdr
 cd csdr
 sudo make
 sudo make install
