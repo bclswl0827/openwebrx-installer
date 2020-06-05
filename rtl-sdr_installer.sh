@@ -5,7 +5,7 @@ git clone https://github.com/bclswl0827/rtl-sdr.git
 cd rtl-sdr/
 mkdir build
 cd build
-cmake ../ -DINSTALL_UDEV_RULES=ON
+cmake ../ -DDETACH_KERNEL_DRIVER=ON -DINSTALL_UDEV_RULES=ON
 make
 make install
 ldconfig
