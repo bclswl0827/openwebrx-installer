@@ -11,6 +11,7 @@ sudo rmmod msi2500
 git clone https://github.com/simonyiszk/openwebrx.git
 git clone https://github.com/jketterl/csdr
 cd csdr
+git checkout 32958ce37eb765f7f5511fe5f7c2c244c13f264b
 sudo make
 sudo make install
 cd ..
